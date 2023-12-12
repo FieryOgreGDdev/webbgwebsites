@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>go back</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
+
+
+
+<ui>
+  <h>coming soon</h>
+  <hr>
+  <li>I don't know when it will be completed</li>
+    <li>Want to preview it?</li>
+   <li>come on man dev!!!!!!1111</li>
+   <li>We will let you know with the day indicator.</li>
+</ui>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D-Day Counter</title>
+  <style>
+    #countdown {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div id="countdown"></div>
+
+  <script>
+    // 디데이 날짜 설정 (년, 월(0-11), 일)
+    const ddayDate = new Date(2023, 12, 29);
+
+    function updateCountdown() {
+      const currentDate = new Date();
+      const timeDifference = ddayDate - currentDate;
+
+      const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+      const countdownElement = document.getElementById('countdown');
+      countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    // 초기 호출 및 1초마다 업데이트
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
+
+</body>
+</html>
+
+
+<audio src="wood click.ogg" autoplay></audio>
